@@ -1,4 +1,4 @@
-chessServer: main.o serverStuff.o
+chessServer: main.o serverStuff.o errorLogger.o
 	gcc main.o serverStuff.o errorLogger.o -std=c17 -pthread -Wall -o chessServer
 
 main.o: main.c
