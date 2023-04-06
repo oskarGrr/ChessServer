@@ -6,10 +6,13 @@
 //are free to be transfered back and forth between players
 
 #include <stdlib.h>
-#include "serverStuff.h"
+#include <pthread>
+#include "lobbyManager.h"
+#include "connectionsAcceptor.h"
 
 int main(void)
 {
-    startServer();
+    pthread_t connectionAcceptorThread;
+    pthread_create(&connectionAcceptorThread, NULL, );
     return EXIT_SUCCESS;
 }
